@@ -1,0 +1,172 @@
+.gap-analysis {
+    padding-top: 2rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: var(--text-muted);
+    font-size: 1.125rem;
+}
+
+.analysis-form {
+    margin-bottom: 2rem;
+}
+
+.analysis-form h2 {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.role-select {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.analysis-results {
+    display: grid;
+    gap: 2rem;
+}
+
+.result-header {
+    text-align: center;
+}
+
+.result-header h2 {
+    color: var(--primary-light);
+    margin-bottom: 0.5rem;
+}
+
+.result-header p {
+    color: var(--text-muted);
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.chart-card {
+    padding: 2rem;
+}
+
+.chart-card h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.chart-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.legend-dot.matched {
+    background: #10b981;
+}
+
+.legend-dot.partial {
+    background: #f59e0b;
+}
+
+.legend-dot.missing {
+    background: #ef4444;
+}
+
+.skills-breakdown {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skill-section h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.recommendations {
+    padding: 2rem;
+}
+
+.recommendations h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.recommendations-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.recommendation-item {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    padding: 0.5rem 0;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-legend {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
